@@ -7,7 +7,7 @@ public class Routes {
         return "called test1";
     }
 
-    @WebRoute(path = "test2")
+    @WebRoute(path = "/test2")
     public String test2() {
         return "called test2";
     }

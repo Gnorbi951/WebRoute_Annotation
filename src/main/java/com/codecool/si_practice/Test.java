@@ -6,14 +6,22 @@ import com.sun.net.httpserver.HttpServer;
 
 import java.io.IOException;
 import java.io.OutputStream;
+import java.lang.reflect.Method;
 import java.net.InetSocketAddress;
 
 public class Test {
 
     public static void main(String[] args) throws Exception {
         HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
-        server.createContext("/test", new MyHandler());
-        server.createContext("/", new IndexHandler() );
+        //server.createContext("/test", new MyHandler());
+        //server.createContext("/", new IndexHandler() );
+        for(Method m: Routes.class.getMethods()) {
+            if(m.isAnnotationPresent(WebRoute.class)) {
+                Routes route = new Routes();
+                System.out.println(m.invoke(route));
+            }
+        }
+
         server.setExecutor(null); // creates a default executor
         server.start();
     }
