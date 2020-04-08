@@ -19,6 +19,7 @@ public class Test {
             if(m.isAnnotationPresent(WebRoute.class)) {
                 Routes route = new Routes();
                 System.out.println(m.invoke(route));
+                server.createContext(m.getAnnotation(WebRoute.class).path(), new MyHandler());
             }
         }
 
@@ -27,8 +28,9 @@ public class Test {
     }
 
     static class MyHandler implements HttpHandler {
+        Routes route = new Routes();
         public void handle(HttpExchange t) throws IOException {
-            String response = "This is my response";
+            String response = route.test1();
             t.sendResponseHeaders(200, response.length());
             OutputStream os = t.getResponseBody();
             os.write(response.getBytes());
