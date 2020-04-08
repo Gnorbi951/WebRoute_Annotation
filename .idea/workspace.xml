@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ac6cd6f-891b-441c-b2cc-e8c497d02f0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/si_practice/WebRoute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/si_practice/Routes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/si_practice/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/si_practice/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/si_practice/WebRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/si_practice/WebRoute.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586339862179</updated>
-      <workItem from="1586339865568" duration="3335000" />
+      <workItem from="1586339865568" duration="3727000" />
     </task>
     <servers />
   </component>
