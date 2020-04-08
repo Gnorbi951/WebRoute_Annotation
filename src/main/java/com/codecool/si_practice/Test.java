@@ -19,7 +19,6 @@ public class Test {
     }
 
     static class MyHandler implements HttpHandler {
-        @Override
         public void handle(HttpExchange t) throws IOException {
             String response = "This is my response";
             t.sendResponseHeaders(200, response.length());
